@@ -29,7 +29,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     # gradlew 실행권한 부여
-    - name: abc
+    - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     #Build with Gradle
     - name: Build with Gradle
