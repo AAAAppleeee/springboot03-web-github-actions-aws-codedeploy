@@ -13,6 +13,14 @@ on:
   pull_request:
     branches: [ "master" ]
 
+aws:
+  aws_access_key_ID: ${( AWS_ACCESS_KEY_ID )}
+  aws_access_key_ID: ${( AWS_SECRET_ACCESS_KEY )}
+  aws_access_key_ID: ${( AWS_REGION )}
+  aws_access_key_ID: ${( CODEDEPLOY_APPLICATION_NAME )}
+  aws_access_key_ID: ${( CODEDEPLOY_DEPLOYMENT_NAME_GROUP_NAME )}
+  aws_access_key_ID: ${( S3_LOCATION_BUCKET )}
+
 permissions:
   contents: read
 
